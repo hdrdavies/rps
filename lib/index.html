@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="lib/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game" ng-controller="gameController">
+        <div class="hand cpu"></div>
+        <div class="hand player"></div>
+        <div class="plays">
+          <div class="play rock" ng-click=playerPicks('rock')></div>
+          <div class="play paper" ng-click="playerPicks('paper')"></div>
+          <div class="play scissors" ng-click="playerPicks('scissors')"></div>
+        </div>
+      </div>
+      <div class="score" ng-controller="scoreController" ng-model="score">
+        <div>
+          <h1>Player</h1>
+          <pre>players = <span ng-bind="score.player"></span></pre>
+          <h1>Draws</h1>
+          <pre>draws = <span ng-bind="score.draw"></span></pre>
+          <h1>CPU</h1>
+          <pre>cpu = <span ng-bind="score.cpu"></span></pre>
+        </div>
+      </div>
+    <div class="footer">Images by <a href="http://emojione.com/">EmojiOne</a></div>
+    </div>
+  <script src="lib/score.js"></script>
+  <script src="lib/game.js"></script>
+  <script src="lib/app.js"></script>
+  </body>
+</html>

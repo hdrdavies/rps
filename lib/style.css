@@ -1,0 +1,51 @@
+* {
+  font-family: 'Open-Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5em;
+}
+
+.hand {
+  height: 10em;
+  margin: 5em auto;
+  width: 10em;
+}
+
+.hand.cpu {
+  font-size: 0.5em;
+  background-size: cover;
+  background-image: url(/img/count.png);
+}
+
+.hand.player {
+  background-size: cover;
+  background-image: url(/img/count.png);
+}
+
+.plays {
+  text-align: center;
+  width: 100%;
+}
+.play {
+  display: inline-block;
+  height: 8em;
+  margin: 2em;
+  width: 8em;
+}
+
+.rock {
+  background-size: cover;
+  background-image: url(/img/rock.png);
+}
+
+.paper {
+  background-size: cover;
+  background-image: url(/img/paper.png);
+}
+
+.scissors {
+  background-size: cover;
+  background-image: url(/img/scissors.png);
+}

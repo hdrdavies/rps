@@ -1,0 +1,17 @@
+{
+"rock": {
+  "name": "rock",
+  "image": "rock.jpg",
+  "beats": "scissors"
+  },
+"paper": {
+  "name": "paper",
+  "image": "paper.jpg",
+  "beats": "rock"
+  },
+"scissors": {
+  "name": "scissors",
+  "image": "scissors.jpg",
+  "beats": "paper"
+  }
+}
